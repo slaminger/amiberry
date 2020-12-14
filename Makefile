@@ -96,6 +96,13 @@ else ifeq ($(PLATFORM),n2)
     CPUFLAGS += -mcpu=cortex-a72
     CPPFLAGS += -DCPU_AARCH64 -D_FILE_OFFSET_BITS=64 -DUSE_RENDER_THREAD
     AARCH64 = 1
+    
+# Libre Computer, La Frite, Le Potato (SDL2 64-BIT)
+else ifeq ($(PLATFORM),AML-S805X-AC)
+    CPUFLAGS += -mcpu=cortex-a53
+    CFLAGS += -ftree-vectorize -funsafe-math-optimizations
+    CPPFLAGS += -DCPU_AARCH64 -D_FILE_OFFSET_BITS=64 
+    AARCH64 = 1
 
 # Raspberry Pi 3/4 (SDL2 64-bit)
 else ifeq ($(PLATFORM),pi64)
