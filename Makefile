@@ -195,7 +195,7 @@ else ifeq ($(PLATFORM),lePotato)
    AARCH64 = 1
    
    # La Frite Libre Computer
-else ifeq ($(PLATFORM),leFrite)
+else ifeq ($(PLATFORM),mali-drm-gles2-sdl2)
     CPUFLAGS += -mcpu=cortex-a53
     CPPFLAGS += -DCPU_AARCH64 -D_FILE_OFFSET_BITS=64 
     AARCH64 = 1
