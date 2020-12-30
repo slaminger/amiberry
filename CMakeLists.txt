@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 set(CMAKE_VERBOSE_MAKEFILE OFF)
-
+set(CMAKE_GENERATOR_PLATFORM go-advance)
 set(VERSION_MAJOR 2)
 set(VERSION_MINOR 24)
 
