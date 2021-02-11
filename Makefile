@@ -146,6 +146,12 @@ else ifeq ($(PLATFORM),go-advance)
     CPUFLAGS += -mcpu=cortex-a35
     CPPFLAGS += -DCPU_AARCH64 -D_FILE_OFFSET_BITS=64
     AARCH64 = 1
+    
+ # Asus Tinkerboard
+else ifeq ($(PLATFORM),tinker)
+    CPUFLAGS += -mcpu=cortex-a53
+    CPPFLAGS += 
+    AARCH64 = 0
 
 # Generic Cortex A53 aarch64 target (SDL2, 64-bit)
 else ifeq ($(PLATFORM),a64)
